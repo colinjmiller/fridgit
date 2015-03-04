@@ -12,6 +12,12 @@ body {
   font-family: Avenir, sans-serif;
 }
 
+h1 {
+  font-size: 15vh;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
 #hero {
   position: relative;
 }
@@ -65,4 +71,9 @@ section {
 
 section:nth-of-type(even) {
   background-color: #bdce46;
+}
+
+#what img {
+  height: 100vh;
+  float: left;
 }
