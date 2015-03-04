@@ -1,0 +1,79 @@
+/* Import Fonts */
+
+@font-face {
+    font-family: Avenir;
+    src: url('assets/avenir.ttf') format('truetype');
+}
+
+/* Styles. Please keep alphabetized */
+
+body {
+  overflow-x: hidden;
+  font-family: Avenir, sans-serif;
+}
+
+h1 {
+  font-size: 15vh;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+#hero {
+  position: relative;
+}
+
+#hero img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+#hero nav {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#hero nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#hero nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#hero nav ul li:first-child {
+  margin-left: 0;
+}
+
+#hero nav ul li a {
+  border: 1px solid #bdce46;
+  padding: 20px;
+  font-size: 30px;
+  color: #bdce46;
+  transition: all .2s ease;
+}
+
+#hero nav ul li a:hover, #hero nav ul li a.selected {
+  background-color: #bdce46;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+section:nth-of-type(even) {
+  background-color: #bdce46;
+}
+
+#what img {
+  height: 100vh;
+  float: left;
+}
