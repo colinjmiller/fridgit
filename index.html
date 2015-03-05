@@ -4,18 +4,34 @@
   <title>Fridgit</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="style.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />   
+  <link href="./css/normalize.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
-  <section id="hero">
-    <nav class="side">
-      <ul>
-        <li><a class="selected" href="#hero">Home</a></li>
-        <li><a href="#what">What</a></li>
-        <li><a href="#why">Why</a></li>
+    <nav class="nav-bar open-active">
+      <div id="logo" class="open hidden-mobile">
+          <a href="#"></a>
+      </div>
+      <div class="centering">
+      <ul class="navigation-ul">
+        <li class="nav-bar-item">
+          <a href="#hero">home</a>
+        </li>
+        <li class="nav-bar-item active">
+          <a href="#overview">overview</a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#interactive">demo</a>
+        </li> 
+        <li class="nav-bar-item">
+          <a href="#team">team</a>
+        </li>
       </ul>
+      </div>
+      <div id="circle" class="nav-bar-item nav-circle"> </div>
     </nav>
+  <section id="hero">
     <img src="assets/fridgit_logo-text.png" alt="Fridgit Logo" />
   </section>
   <section id="what">
@@ -52,5 +68,7 @@
       <p class="role">Product Manager</p>
     </div>
   </section>
+  <script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="./js/navigation.js"></script>
 </body>
 </html>

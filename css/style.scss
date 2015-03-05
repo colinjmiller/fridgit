@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Avenir;
-    src: url('assets/avenir.ttf') format('truetype');
+    src: url('../assets/avenir.ttf') format('truetype');
 }
 
 /**
@@ -107,6 +107,7 @@ header {
       overflow: hidden;
       width: auto;
       display: inline-block;
+      margin: 0;
     }
     li { 
       height: $nav_height + $corner; 
@@ -134,7 +135,7 @@ header {
           display: block;
           padding: 13px 15px 13px 15px;
           margin-top: $corner;
-          font: 500 17px "Lato", "Helvetica", "Arial", sans-serif;
+          font: 500 17px Avenir, "Helvetica", "Arial", sans-serif;
           color: $green;
           text-decoration: none;
           -moz-transition: margin-top 0.2s ease;
@@ -184,8 +185,8 @@ header {
         }
         .nav-bar-item {
           a {
-            padding: 13px 20px 13px 20px;
-            font: 500 16px "Lato", "Helvetica", "Arial", sans-serif;
+            padding: 15px 20px 13px 20px;
+            font: 500 16px Avenir, "Helvetica", "Arial", sans-serif;
           }
       }
     }
@@ -193,7 +194,6 @@ header {
       float: left;
       position: relative;
       width: $nav_height + $corner;
-      background-image: url("../img/logo-01.png");
       background-size: contain; 
       height: $nav_height + $corner;
       z-index: 2;

@@ -1,0 +1,168 @@
+/* Import Fonts */
+@font-face {
+  font-family: Avenir;
+  src: url("../assets/avenir.ttf") format("truetype"); }
+/**
+ * 
+ */
+/* Styles. Please keep alphabetized */
+body {
+  overflow-x: hidden;
+  font-family: Avenir, sans-serif; }
+
+h1 {
+  font-size: 15vh;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+#hero {
+  position: relative; }
+  #hero img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%); }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  padding: 25px;
+  padding-left: 150px; }
+  section:nth-of-type(even) {
+    background-color: #bdce46; }
+
+#what img {
+  height: 100vh;
+  float: left;
+  margin: 0 -80px; }
+
+#team {
+  text-align: center; }
+  #team .team-member {
+    display: inline-block;
+    margin: 0px 25px 0px 0px;
+    transform: translate(0, 57%); }
+    #team .team-member img {
+      height: 250px;
+      border-radius: 125px; }
+    #team .team-member .name {
+      font-weight: bold;
+      color: #bdce46;
+      font-size: 2em;
+      margin-bottom: 0;
+      margin-top: 0.7em; }
+    #team .team-member .role {
+      font-size: 1.2em;
+      margin-top: 0.5em; }
+
+/* 
+ * Navigation Bar Styles 
+ */
+header {
+  float: left;
+  height: 70px;
+  width: auto; }
+
+.nav-bar {
+  float: left;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  display: block-inline; }
+  .nav-bar .centering {
+    text-align: center;
+    width: auto; }
+    .nav-bar .centering ul {
+      float: left;
+      overflow: hidden;
+      width: auto;
+      display: inline-block;
+      margin: 0; }
+    .nav-bar .centering li {
+      height: 70px;
+      list-style: none; }
+    .nav-bar .centering #logo {
+      height: 0; }
+      .nav-bar .centering #logo a {
+        display: block; }
+      .nav-bar .centering #logo:hover {
+        cursor: pointer; }
+    .nav-bar .centering .nav-bar-item {
+      float: left;
+      position: relative;
+      left: 0;
+      -moz-transition: opacity 0.75s ease-in-out;
+      -webkit-transition: opacity 0.75s ease-in-out;
+      transition: opacity 0.75s ease-in-out; }
+      .nav-bar .centering .nav-bar-item #home:hover {
+        cursor: default; }
+        .nav-bar .centering .nav-bar-item #home:hover a {
+          color: #bdce46;
+          cursor: default; }
+      .nav-bar .centering .nav-bar-item a {
+        display: block;
+        padding: 13px 15px 13px 15px;
+        margin-top: 20px;
+        font: 500 17px Avenir, "Helvetica", "Arial", sans-serif;
+        color: #bdce46;
+        text-decoration: none;
+        -moz-transition: margin-top 0.2s ease;
+        -webkit-transition: margin-top 0.2s ease;
+        transition: margin-top 0.2s ease; }
+        .nav-bar .centering .nav-bar-item a:hover {
+          cursor: pointer;
+          -moz-transition: margin-top 0.2s ease;
+          -webkit-transition: margin-top 0.2s ease;
+          transition: margin-top 0.2s ease; }
+          .nav-bar .centering .nav-bar-item a:hover {
+            margin-top: 18px; }
+        .nav-bar .centering .nav-bar-item a.active:hover {
+          cursor: default; }
+          .nav-bar .centering .nav-bar-item a.active:hover a {
+            cursor: default; }
+  .nav-bar #circle {
+    float: right;
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #bdce46;
+    top: 20px;
+    -moz-transition: left 0.5s, width 0.5s, height, 0.5s;
+    -webkit-transition: left 0.5s, width 0.5s, height, 0.5s;
+    transition: left 0.5s, width 0.5s, height, 0.5s; }
+    .nav-bar #circle:hover {
+      cursor: pointer; }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 112%; }
+
+  .nav-bar {
+    background-color: 255, 255, 255, 1;
+    display: inline-block; }
+    .nav-bar .centering ul {
+      float: right;
+      width: auto;
+      margin-right: 10px; }
+    .nav-bar .centering .nav-bar-item a {
+      padding: 15px 20px 13px 20px;
+      font: 500 16px Avenir, "Helvetica", "Arial", sans-serif; }
+    .nav-bar #logo {
+      float: left;
+      position: relative;
+      width: 70px;
+      background-size: contain;
+      height: 70px;
+      z-index: 2;
+      -moz-transition: opacity 0.75s ease-in-out;
+      -webkit-transition: opacity 0.75s ease-in-out;
+      transition: opacity 0.75s ease-in-out; }
+      .nav-bar #logo a {
+        display: block; }
+      .nav-bar #logo:hover {
+        cursor: pointer; } }
+
+/*# sourceMappingURL=style.css.map */
