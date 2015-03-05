@@ -10,9 +10,8 @@ body {
   overflow-x: hidden;
   font-family: Avenir, sans-serif; }
 
-h1 {
-  font-size: 15vh;
-  color: #FFFFFF;
+h1, h2, h3 {
+  color: #bdce46;
   font-weight: bold; }
 
 #hero {
@@ -21,27 +20,29 @@ h1 {
     position: absolute;
     top: 40%;
     left: 50%;
+    width: 50%;
     transform: translate(-50%, -40%); }
+
+#overview {
+  padding-top: 20%; }
+  #overview img {
+    min-width: 250px;
+    width: 33%; }
 
 section {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding: 25px;
-  padding-left: 150px; }
+  text-align: center;
+  overflow: hidden; }
   section:nth-of-type(even) {
-    background-color: #bdce46; }
-
-#what img {
-  height: 100vh;
-  float: left;
-  margin: 0 -80px; }
+    background-color: #eeeeee; }
 
 #team {
   text-align: center; }
   #team .team-member {
     display: inline-block;
-    margin: 0px 25px 0px 0px;
-    transform: translate(0, 57%); }
+    margin: 0px 25px 0px 0px; }
     #team .team-member img {
       height: 250px;
       border-radius: 125px; }
@@ -55,6 +56,16 @@ section {
       font-size: 1.2em;
       margin-top: 0.5em; }
 
+@media only screen and (min-width: 1224px) {
+  #overview h1 {
+    font-size: 6em; }
+  #overview p {
+    font-size: 2.5em; }
+  #overview img {
+    float: left; }
+
+  #team .team-member {
+    transform: translate(0, 57%); } }
 /* 
  * Navigation Bar Styles 
  */
@@ -67,8 +78,7 @@ header {
   float: left;
   position: fixed;
   z-index: 3;
-  width: 100%;
-  display: block-inline; }
+  width: 100%; }
   .nav-bar .centering {
     text-align: center;
     width: auto; }
@@ -164,5 +174,3 @@ header {
         display: block; }
       .nav-bar #logo:hover {
         cursor: pointer; } }
-
-/*# sourceMappingURL=style.css.map */
