@@ -35,12 +35,21 @@ h1, h2, h3 {
 
 #overview {
 
-  padding-top: 20%;
+  padding-top: 8%;
+  padding-right: 8%;
 
   img {
     min-width: 250px;
     width: 33%;
   }
+}
+
+#video {
+  padding-top: 8%;
+}
+
+#documents {
+  min-height: 20vh;
 }
 
 section {

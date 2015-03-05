@@ -24,10 +24,17 @@ h1, h2, h3 {
     transform: translate(-50%, -40%); }
 
 #overview {
-  padding-top: 20%; }
+  padding-top: 8%;
+  padding-right: 8%; }
   #overview img {
     min-width: 250px;
     width: 33%; }
+
+#video {
+  padding-top: 8%; }
+
+#documents {
+  min-height: 20vh; }
 
 section {
   width: 100vw;
