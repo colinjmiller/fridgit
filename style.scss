@@ -1,0 +1,117 @@
+/* Import Fonts */
+
+@font-face {
+    font-family: Avenir;
+    src: url('assets/avenir.ttf') format('truetype');
+}
+
+/* Styles. Please keep alphabetized */
+
+body {
+  overflow-x: hidden;
+  font-family: Avenir, sans-serif;
+}
+
+h1 {
+  font-size: 15vh;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+#hero {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+}
+
+nav {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-left: 20px;
+
+      a {
+        border: 1px solid #bdce46;
+        padding: 20px;
+        font-size: 30px;
+        color: #bdce46;
+        transition: all .2s ease;
+        background-color: #FFFFFF;
+
+        &:hover, &.selected {
+          background-color: #bdce46;
+          text-decoration: none;
+          color: #FFFFFF;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &.side {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: none;
+
+    ul {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      li {
+        display: block;
+        margin-top: 5px;
+
+        &:first-child {
+          margin-top: 0;
+          margin-left: 20px;
+        }
+
+        a {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+
+          &:hover, &.selected {
+            border-color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  padding: 25px;
+  padding-left: 150px;
+
+  &:nth-of-type(even) {
+    background-color: #bdce46;
+  }
+}
+
+#what img {
+  height: 100vh;
+  float: left;
+  margin: 0 -80px;
+}
