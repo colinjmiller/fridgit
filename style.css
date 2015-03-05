@@ -80,4 +80,23 @@ section {
   float: left;
   margin: 0 -80px; }
 
+#team {
+  text-align: center; }
+  #team .team-member {
+    display: inline-block;
+    margin: 0px 25px 0px 0px;
+    transform: translate(0, 57%); }
+    #team .team-member img {
+      height: 250px;
+      border-radius: 125px; }
+    #team .team-member .name {
+      font-weight: bold;
+      color: #bdce46;
+      font-size: 2em;
+      margin-bottom: 0;
+      margin-top: 0.7em; }
+    #team .team-member .role {
+      font-size: 1.2em;
+      margin-top: 0.5em; }
+
 /*# sourceMappingURL=style.css.map */
