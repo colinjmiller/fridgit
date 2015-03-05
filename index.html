@@ -4,30 +4,94 @@
   <title>Fridgit</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="style.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />   
+  <link href="./css/normalize.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
 </head>
 <body>
-  <section id="hero">
-    <nav>
-      <ul>
-        <li><a class="selected" href="#hero">Home</a></li>
-        <li><a href="#what">What</a></li>
-        <li><a href="#why">Why</a></li>
+    <nav class="nav-bar open-active">
+      <div id="logo" class="open hidden-mobile">
+          <a href="#"></a>
+      </div>
+      <div class="centering">
+      <ul class="navigation-ul">
+        <li class="nav-bar-item active">
+          <a href="#hero">home</a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#overview">overview</a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#video">video</a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#demo">demo</a>
+        </li> 
+        <li class="nav-bar-item">
+          <a href="#team">team</a>
+        </li>
       </ul>
+      </div>
+      <div id="circle" class="nav-bar-item nav-circle"> </div>
     </nav>
+  <section id="hero">
     <img src="assets/fridgit_logo-text.png" alt="Fridgit Logo" />
   </section>
-  <section id="what">
+  <section id="overview">
     <img src="assets/digital-prototypeD-10_iphone5s_spacegrey_side1.png" alt="Fridgit application on phone" />
-    <h1>What is Fridgit?</h1>
+    <h1>Overview</h1>
     <p>Fridgit is a smart refridgerator that helps keep track of food. When food enters or leaves Fridgit, internal cameras record this movement and automatically update the food inventory. Fridgit's interface is also available on smart devices, allowing shoppers to check what they have and what they need while away!</p>
   </section>
-  <section id="why">
-
+  <section id="problem">
+    <h2>The Problem</h2>
+    <p>According to the National Resources Defense Council, American households waste around 25 percent of the food products they buy.</p>
+    <h2>The Solution</h2>
+    <p>Fridgit focuses on reducing this number by helping users remember what foods they have in stock and encouraging them to make responsible decisions about the foods they have.</p>
   </section>
-  <section id="example">
+  <section id="video">
+    <h2>Video Prototype</h2>
+    <video controls src="https://d1wst0behutosd.cloudfront.net/videos/1189249.mp4?Expires=1425551138&Signature=FFHMCucUbzbyzi-LxGS3B4qPrtsAc1p5DN02f5ioFvxCBsMZacj7AnV7IHlxTE9NRBA7eXR0dQhRZVRTm8oMc7lTcskNpxHh06ffUziwIRSshg2m2x6w9zk~J9Xuy3gVif8vKsr1HqVizYvTDzWHL36bAoGP7OGbHzc8Qo~H6TQk7Z4EsyVzR6liimUJPHkGsSJBpkMBD0Z3WBM0SvJqK-GgTcNRqVz~Iuh1vJpZP3U1MU809FNE1XLwCQ~QiuQbaVAv2enUvbKFc0feExQuZN76lYzzGAr0-wGDH6Y374ou3pFdmaoODKs0Fw8rx7z~9YimYaYvlCxy8kfgf1-A3w__&Key-Pair-Id=APKAJJ6WELAPEP47UKWQ">
+      Sorry, but your browser does not support embedded videos. <a href="https://vid.me/bBza">Click here to watch the video.</a>
+    </video>
+  </section>
+  <section id="demo">
+    <h2>Demo</h2>
     <iframe width="456" height="940" src="//invis.io/RE2C3PMHY" frameborder="0" allowfullscreen></iframe>
   </section>
+
+  <section id="team">
+    <h2>The Team</h2>
+    <div class="team-member">
+      <img src="assets/nick.jpg" />
+      <p class="name">Nick Holden</p>
+      <p class="role">Fridge Enthusiast</p>
+    </div>
+    <div class="team-member">
+      <img src="assets/brian.jpg" />
+      <p class="name">Brain Hoang</p>
+      <p class="role">Security Guard</p>
+    </div>
+    <div class="team-member">
+      <img src="assets/colin.jpg" />
+      <p class="name">Colin Miller</p>
+      <p class="role">Developer</p>
+    </div>
+    <div class="team-member">
+      <img src="assets/francis.jpg" />
+      <p class="name">Francis Nguyen</p>
+      <p class="role">Product Manager</p>
+    </div>
+  </section>
+  <section id="documents">
+    <h2>Documents</h2>
+    <a class="btn btn-default" href="documents/firstReport.pdf">First Report</a>
+    <a class="btn btn-default" href="documents/firstPresentation.pdf">First Presentation</a>
+    <a class="btn btn-default" href="documents/secondReport.pdf">Second Report</a>
+    <a class="btn btn-default" href="documents/secondPresentation.pdf">Second Presentation</a>
+  </section>
+
+ <script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="./js/navigation.js"></script>
 </body>
 </html>
