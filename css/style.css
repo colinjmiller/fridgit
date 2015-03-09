@@ -10,9 +10,16 @@ body {
   overflow-x: hidden;
   font-family: Avenir, sans-serif; }
 
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px; }
+
 h1, h2, h3 {
   color: #bdce46;
   font-weight: bold; }
+
+p {
+  font-size: 1.25em; }
 
 #hero {
   position: relative; }
@@ -24,10 +31,9 @@ h1, h2, h3 {
     transform: translate(-50%, -40%); }
 
 #overview {
-  padding-top: 8%;
-  padding-right: 8%; }
+  padding-top: 50px;
+  padding-right: 50px; }
   #overview img {
-    min-width: 250px;
     width: 33%; }
 
 #problem {
@@ -68,7 +74,7 @@ section {
       font-size: 1.2em;
       margin-top: 0.5em; }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   h1 {
     font-size: 6em; }
 
@@ -83,9 +89,14 @@ section {
 
   #overview img {
     float: left; }
+  #overview .content {
+    float: left;
+    width: 66%; }
+    #overview .content p {
+      font-size: 2.5em; }
 
-  #team .team-member {
-    transform: translate(0, 57%); } }
+  #team h2 {
+    margin-bottom: 50px; } }
 /* 
  * Navigation Bar Styles 
  */
@@ -194,3 +205,5 @@ header {
         display: block; }
       .nav-bar #logo:hover {
         cursor: pointer; } }
+
+/*# sourceMappingURL=style.css.map */
