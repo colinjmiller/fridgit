@@ -16,9 +16,18 @@ body {
   font-family: Avenir, sans-serif;
 }
 
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
 h1, h2, h3 {
   color: #bdce46;
   font-weight: bold;
+}
+
+p {
+  font-size: 1.25em;
 }
 
 #hero {
@@ -35,11 +44,10 @@ h1, h2, h3 {
 
 #overview {
 
-  padding-top: 8%;
-  padding-right: 8%;
+  padding-top: 50px;
+  padding-right: 50px;
 
   img {
-    min-width: 250px;
     width: 33%;
   }
 }
@@ -101,7 +109,7 @@ section {
 
 // For tablets/desktop
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 768px) {
   h1 {
     font-size: 6em;
   }
@@ -122,11 +130,20 @@ section {
     img {
       float: left;
     }
+
+    .content {
+      float: left;
+      width: 66%;
+
+      p {
+        font-size: 2.5em;
+      }
+    }
   }
 
   #team {
-    .team-member {
-      transform: translate(0, 57%);
+    h2 {
+      margin-bottom: 50px;
     }
   }
 }
