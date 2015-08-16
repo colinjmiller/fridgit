@@ -580,9 +580,13 @@ $nav_height: 50px;
       height: 40px;
       margin-top: 15px;
       margin-left: 25px;
-    }
-    &:hover {
-      cursor: pointer;
+      opacity: 1;
+      -moz-transition: opacity 0.5s;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+      &:hover {
+        opacity: 0.5;
+      }
     }
     img {
       height: 100%;

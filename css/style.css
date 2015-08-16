@@ -412,9 +412,13 @@ section {
       display: block;
       height: 40px;
       margin-top: 15px;
-      margin-left: 25px; }
-    .nav-bar #logo:hover {
-      cursor: pointer; }
+      margin-left: 25px;
+      opacity: 1;
+      -moz-transition: opacity 0.5s;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
+      .nav-bar #logo a:hover {
+        opacity: 0.5; }
     .nav-bar #logo img {
       height: 100%;
       width: auto; }
