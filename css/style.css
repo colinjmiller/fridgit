@@ -98,14 +98,47 @@ p {
 
 #hero {
   position: relative;
-  min-height: 100vh; }
+  height: 100vh;
+  padding: 0; }
+  #hero .middle-center {
+    padding: 0 30px;
+    margin-top: 40vh; }
+    #hero .middle-center .intro {
+      font-family: 'MarkOT';
+      color: #444;
+      font-size: 1.79em; }
+      #hero .middle-center .intro strong {
+        color: #9bd3aa; }
+    #hero .middle-center p {
+      color: #777; }
   #hero img {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 50%;
-    transform: translate(-50%, -40%); }
+    bottom: 0;
+    left: 0;
+    width: 100%; }
 
+@media only screen and (min-width: 768px) {
+  #hero .middle-center {
+    margin-top: 19%; }
+    #hero .middle-center .intro {
+      font-size: 4.0em; }
+    #hero .middle-center p {
+      font-size: 1.2em; }
+  #hero img {
+    position: static;
+    max-height: 60vh;
+    width: auto; } }
+@media only screen and (min-width: 1024px) {
+  #hero .middle-center {
+    margin-top: 15%; }
+    #hero .middle-center .intro {
+      font-size: 4.0em; }
+    #hero .middle-center p {
+      font-size: 1.2em; }
+  #hero img {
+    position: static;
+    max-height: 70vh;
+    width: auto; } }
 #demo {
   border-top: 1px solid #f0f0f0; }
   #demo iframe {
@@ -114,7 +147,8 @@ p {
 
 #overview {
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  background-color: #F7F7F7; }
   #overview img {
     margin: 0 auto;
     width: 100%; }
@@ -167,11 +201,11 @@ p {
   padding: 30px 0;
   background-color: white;
   border-top: 1px solid #f0f0f0; }
+  #video iframe {
+    max-width: 95vw;
+    max-height: 80vh; }
   #video p {
     padding-top: 20px; }
-  #video video {
-    margin: 0 auto;
-    max-height: 80vh; }
 
 @media only screen and (min-width: 768px) {
   #video {
@@ -271,8 +305,6 @@ section {
   padding: 30px;
   text-align: center;
   overflow: hidden; }
-  section:nth-of-type(even) {
-    background-color: #F7F7F7; }
   section h2 {
     padding-bottom: 20px; }
 
@@ -280,7 +312,8 @@ section {
   section {
     padding: 30px; } }
 #team {
-  text-align: center; }
+  text-align: center;
+  background-color: #F7F7F7; }
   #team .team-member {
     display: inline-block;
     margin: 0px 0px 0px 0px; }

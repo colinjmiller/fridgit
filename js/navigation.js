@@ -19,11 +19,10 @@ $(document).ready(function() {
       });
     } else {
       $('#Player1').css({
-        'height': ($(window).width() - 200) * 9 / 16 - 100 ,
+        'height': ($(window).width() - 200) * 9 / 16 - 100,
         'width': $(window).width() - 200,
       });
     }
-
   }); $(window).resize();
 
   $('.nav-bar-item').click(function(e){
