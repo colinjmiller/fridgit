@@ -106,11 +106,26 @@ p {
     width: 50%;
     transform: translate(-50%, -40%); }
 
+#demo {
+  border-top: 1px solid #f0f0f0; }
+  #demo iframe {
+    max-height: 90vh;
+    max-width: 90vw; }
+
 #overview {
   padding-top: 50px;
-  padding-right: 50px; }
+  padding-bottom: 50px; }
   #overview img {
-    width: 33%; }
+    margin: 0 auto;
+    width: 100%; }
+  #overview p {
+    color: #777; }
+  #overview .overview-title {
+    color: #222;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 0.938em;
+    font-weight: bold; }
 
 #problem .row .info-container {
   padding-top: 15px;
@@ -118,7 +133,8 @@ p {
   #problem .row .info-container .info-title {
     color: #222;
     font-size: 0.938em;
-    padding-bottom: 7px; }
+    padding-bottom: 7px;
+    font-weight: bold; }
   #problem .row .info-container .info-text {
     font-size: 0.750em;
     line-height: 1.25em;
@@ -126,8 +142,8 @@ p {
     margin: 0 auto;
     color: #777; }
 #problem svg {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px; }
 #problem h2 ~ h2 {
   margin-top: 5%; }
@@ -136,7 +152,9 @@ p {
   #problem {
     padding: 60px 40px; }
     #problem svg {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      width: 200px;
+      height: 200px; } }
 @media only screen and (min-width: 1024px) {
   #problem .row .info-container .info-title {
     font-size: 1.375em;
@@ -146,11 +164,18 @@ p {
     line-height: 1.25em;
     max-width: 350px; } }
 #video {
-  padding-top: 8%; }
+  padding: 30px 0;
+  background-color: white;
+  border-top: 1px solid #f0f0f0; }
+  #video p {
+    padding-top: 20px; }
   #video video {
-    width: 40vw;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-height: 80vh; }
 
+@media only screen and (min-width: 768px) {
+  #video {
+    padding: 50px 0; } }
 #documents {
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -161,12 +186,15 @@ p {
     margin-bottom: 10px;
     padding: 20px;
     border-radius: 5px;
-    background: rgba(232, 232, 232, 0.5); }
+    background: rgba(232, 232, 232, 0.5);
+    border-bottom: 3px solid #9bd3aa; }
     #documents .document-container a {
       font-size: 0.50em;
       display: block; }
     #documents .document-container p {
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      font-weight: bold;
+      font-size: 0.938em; }
     #documents .document-container .row {
       max-width: 240px;
       margin: 0 auto; }
@@ -198,7 +226,7 @@ p {
   #documents {
     padding: 40px; }
     #documents h2 {
-      padding-bottom: 35px; }
+      padding-bottom: 40px; }
     #documents .row {
       max-width: 1200px;
       margin: 0 auto;
@@ -244,7 +272,7 @@ section {
   text-align: center;
   overflow: hidden; }
   section:nth-of-type(even) {
-    background-color: #eeeeee; }
+    background-color: #F7F7F7; }
   section h2 {
     padding-bottom: 20px; }
 
@@ -290,11 +318,14 @@ section {
     font-size: 1.0em;
     line-height: 1.25em; }
 
-  #overview img {
-    float: left; }
-  #overview .content {
-    float: left;
-    width: 66%; }
+  #overview {
+    text-align: left; }
+    #overview img {
+      display: block; }
+    #overview p {
+      font-size: 0.950em; }
+    #overview .overview-title {
+      font-size: 1.475em; }
 
   #team {
     padding: 60px; }
@@ -314,6 +345,12 @@ section {
       padding-bottom: 0.2em;
       font-size: 1.0em;
       line-height: 0.938em; } }
+@media only screen and (min-width: 1024px) {
+  #overview .overview-title {
+    font-size: 1.975em;
+    padding-bottom: 25px; }
+  #overview p {
+    font-size: 1.175em; } }
 @media only screen and (min-width: 1024px) {
   #team .team-member {
     padding-bottom: 0px; } }

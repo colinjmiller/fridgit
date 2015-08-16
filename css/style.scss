@@ -96,7 +96,7 @@ table {
 /* Styles. Please keep alphabetized */
 
 $green: #9bd3aa;
-$light_gray_opaque: rgba(232, 232, 232, 0.5);
+$light_gray_opaque: #F7F7F7;
 
 body {
   overflow-x: hidden;
@@ -131,13 +131,31 @@ p {
   }
 }
 
-#overview {
+#demo {
+  border-top: 1px solid #f0f0f0;
+  iframe {
+    max-height: 90vh;
+    max-width: 90vw; 
+  }
+}
 
+#overview {
   padding-top: 50px;
-  padding-right: 50px;
+  padding-bottom: 50px;
 
   img {
-    width: 33%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  p {
+    color: #777;
+  }
+  .overview-title {
+    color: #222;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 0.938em;
+    font-weight: bold;
   }
 }
 
@@ -151,6 +169,7 @@ p {
         color: #222;
         font-size: 0.938em;
         padding-bottom: 7px;
+        font-weight: bold;
       }
       .info-text {
         font-size: 0.750em;
@@ -162,8 +181,8 @@ p {
     }
   }
   svg {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
   }
 
@@ -177,6 +196,8 @@ p {
     padding: 60px 40px;
     svg {
       margin-bottom: 20px;
+      width: 200px;
+      height: 200px;
     }
   }
 
@@ -201,11 +222,22 @@ p {
 }
 
 #video {
-  padding-top: 8%;
-  video{
-    width: 100vw - 60;
+  padding: 30px 0;
+  background-color: white;
+  border-top: 1px solid #f0f0f0;
+  p {
+    padding-top: 20px;
+  }
+  video {
     margin: 0 auto;
+    max-height: 80vh;
   } 
+}
+
+@media only screen and (min-width: 768px) {
+  #video {
+    padding: 50px 0;
+  }
 }
 
 #documents {
@@ -220,12 +252,15 @@ p {
     padding: 20px;
     border-radius: 5px;
     background: rgba(232, 232, 232, 0.5);
+    border-bottom: 3px solid $green;
     a {
       font-size: 0.50em;
       display: block;
     }
     p {
       padding-bottom: 10px;
+      font-weight: bold;
+      font-size: 0.938em;
     }
     .row {
       max-width: 240px;
@@ -268,7 +303,7 @@ p {
   #documents {
     padding: 40px;
     h2 {
-      padding-bottom: 35px;
+      padding-bottom: 40px;
     }
     .row {
       max-width: 1200px;
@@ -337,9 +372,8 @@ section {
   padding: 30px;
   text-align: center;
   overflow: hidden;
-
   &:nth-of-type(even) {
-    background-color: #eeeeee;
+    background-color: $light_gray_opaque;
   }
   h2 {
     padding-bottom: 20px;
@@ -411,13 +445,11 @@ section {
   }
 
   #overview {
-    img {
-      float: left;
-    }
-
-    .content {
-      float: left;
-      width: 66%;
+    text-align: left;
+    img {display: block;}
+    p {font-size: 0.950em;}
+    .overview-title {
+      font-size: 1.475em;
     }
   }
 
@@ -446,6 +478,16 @@ section {
         line-height: 0.938em;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #overview {
+    .overview-title {
+      font-size: 1.975em;
+      padding-bottom: 25px;
+    }
+    p {font-size: 1.175em;}
   }
 }
 
